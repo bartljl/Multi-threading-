@@ -1,2 +1,2 @@
-Multi-threading-
+Multi-threading
 ================
