@@ -92,13 +92,13 @@ void *Father(void *args_2){
   {
 	for(int j=1;j<=12;j++)
 	{
-	sem_wait(&dad);
-    printf("Father is reading a book to child #%d.\n",j);
+	  sem_wait(&dad);
+   	  printf("Father is reading a book to child #%d.\n",j);
 	}
 	for(int j=1;j<=12;j++)
 	{
-    printf("Father is tucking in child #%d.\n",j);
-    }
+   	  printf("Father is tucking in child #%d.\n",j);
+        }
 	printf("Father wakes Mother and then goes to sleep.\n");
 	sem_post(&mom);
   }
